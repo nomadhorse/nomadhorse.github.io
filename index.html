@@ -1,120 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nomad Horse | Trailers e Motorhomes Personalizados</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{
-font-family:Arial,sans-serif;
-background:#111;
-color:white;
-}
-header{
-padding:22px;
-text-align:center;
-background:#080808;
-border-bottom:1px solid #333;
-}
-.logo{
-font-size:32px;
-font-weight:bold;
-letter-spacing:3px;
-}
-.hero{
-min-height:75vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-padding:40px 20px;
-background:linear-gradient(135deg,#111,#292929);
-}
-.hero h1{
-font-size:46px;
-margin-bottom:20px;
-}
-.hero p{
-font-size:21px;
-max-width:750px;
-margin:auto;
-color:#ddd;
-line-height:1.5;
-}
-.botao{
-display:inline-block;
-margin-top:30px;
-padding:16px 30px;
-background:#fff;
-color:#111;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
-}
-section{
-padding:65px 20px;
-max-width:1000px;
-margin:auto;
-text-align:center;
-}
-section h2{
-font-size:32px;
-margin-bottom:20px;
-}
-section p{
-font-size:18px;
-line-height:1.7;
-color:#ddd;
-}
-footer{
-padding:30px;
-text-align:center;
-background:#080808;
-color:#aaa;
-}
-</style>
-</head>
+  <title>Nomad Horse | Trailers e Motorhomes Personalizados</title>
 
-<body>
+  <meta name="description" content="Nomad Horse - Trailers, motorhomes e projetos personalizados para quem busca liberdade, conforto e aventura.">
 
-<header>
-<div class="logo">NOMAD HORSE</div>
-</header>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<div class="hero">
-<div>
-<h1>Liberdade para ir mais longe.</h1>
-<p>
-Trailers e motorhomes personalizados, desenvolvidos para quem busca
-aventura, conforto e liberdade sem abrir mão de qualidade e estilo.
-</p>
+    html {
+      scroll-behavior: smooth;
+    }
 
-<a class="botao" href="#contato">QUERO CONHECER</a>
-</div>
-</div>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0a0a0a;
+      color: #ffffff;
+      line-height: 1.6;
+    }
 
-<section>
-<h2>Projetado para sua próxima aventura</h2>
-<p>
-Na Nomad Horse, cada projeto nasce para atender às necessidades do cliente.
-Criamos soluções personalizadas para viagens, lazer e experiências
-inesquecíveis sobre rodas.
-</p>
-</section>
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(10,10,10,0.96);
+      border-bottom: 1px solid #252525;
+    }
 
-<section id="contato">
-<h2>Seu projeto começa aqui</h2>
-<p>
-Entre em contato e conte como você imagina seu trailer ou motorhome.
-A Nomad Horse transforma ideias em projetos feitos para viajar.
-</p>
-</section>
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      min-height: 76px;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-<footer>
-© 2026 Nomad Horse — Todos os direitos reservados.
-</footer>
+    .logo {
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      color: #ffffff;
+    }
 
-</body>
-</html>
+    .menu {
+      display: flex;
+      gap: 28px;
+    }
+
+    .menu a {
+      color: #d8d8d8;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 80px 24px;
+      background:
+        radial-gradient(circle at center, #262626 0%, #111 45%, #050505 100%);
+    }
+
+    .hero-content {
+      max-width: 950px;
+    }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #555;
+      border-radius: 30px;
+      padding: 8px 18px;
+      margin-bottom: 28px;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #cfcfcf;
+    }
+
+    .hero h1 {
+      font-size: clamp(46px, 8vw, 88px);
+      line-height: 1.02;
+      margin-bottom: 25px;
+      letter-spacing: -3px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      color: #bcbcbc;
+      font-size: 19px;
+    }
+
+    .buttons {
+      margin-top: 38px;
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 15px 28px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #ffffff;
+      color: #090909;
+    }
+
+    .btn-primary:hover {
+      background: #dedede;
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #555;
+      color: #ffffff;
+    }
+
+    .btn-secondary:hover {
+      border-color: #ffffff;
+    }
+
+    section {
+      padding: 100px 24px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      max-width: 720px;
+      margin-bottom: 55px;
+    }
+
+    .section-title span {
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(34px, 5vw, 58px);
+      line-height: 1.1;
+      margin-top: 12px;
+    }
+
+    .section-title p {
+      color: #aaa;
+      margin-top: 18px;
+      font-size: 17px;
+    }
+
+    .features {
+      background: #101010;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #171717;
+      border: 1px solid #292929;
+      padding: 34px;
+      min-height: 245px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #555;
+    }
+
+    .card-number {
+      font-size: 12px;
+      color: #777;
+      margin-bottom: 45px;
+    }
+
+    .card h3 {
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #999;
+    }
+
+    .models {
+      background: #080808;
+    }
+
+    .model-card {
+      border-top: 1px solid #333;
+      padding: 38px 0;
+      display:
