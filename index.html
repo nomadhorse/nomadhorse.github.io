@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta name="description" content="Nomad Horse: trailers, reboques e motorhomes personalizados. Projetos exclusivos para viagens, aventura e transporte de cavalos em Santa Catarina.">
-  <meta charset="UTF-8">
+
+<meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description"
+content="Nomad Horse: trailers, reboques e motorhomes personalizados. Projetos exclusivos para viagens, aventura e transporte de cavalos em Santa Catarina.">
 
 <title>Nomad Horse | Trailers, Reboques e Motorhomes Personalizados</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -18,6 +24,12 @@ html{
     scroll-behavior:smooth;
 }
 
+html,
+body{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
     background:#090909;
@@ -25,14 +37,23 @@ body{
     line-height:1.6;
 }
 
+
+/* =========================
+   CABEÇALHO
+========================= */
+
 header{
     position:absolute;
     top:0;
+    left:0;
     width:100%;
     z-index:100;
+
     background:rgba(5,5,5,.96);
     border-bottom:1px solid #292929;
+
     padding:20px 7%;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -42,6 +63,11 @@ header{
     font-size:28px;
     font-weight:800;
     letter-spacing:4px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
 }
 
 nav a{
@@ -55,18 +81,60 @@ nav a:hover{
     color:#fff;
 }
 
+
+/* botão menu mobile */
+
+.menu-toggle{
+    display:none;
+
+    background:transparent;
+    border:1px solid #333;
+
+    color:#fff;
+
+    width:42px;
+    height:42px;
+
+    border-radius:8px;
+
+    font-size:24px;
+    line-height:1;
+
+    cursor:pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
 .hero{
+
     min-height:90vh;
+
     display:flex;
+
     align-items:center;
     justify-content:center;
+
     text-align:center;
+
     padding:70px 20px;
-   background-image:linear-gradient(rgba(0,0,0,0.30),rgba(0,0,0,0.30)),url('11.jpeg');
-   background-size:100% auto;
-background-position:center;
-   background-repeat:no-repeat;
-    
+
+    background-image:
+    linear-gradient(
+        rgba(0,0,0,.30),
+        rgba(0,0,0,.30)
+    ),
+    url('11.jpeg');
+
+    background-size:100% auto;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    background-color:#090909;
 }
 
 .hero-content{
@@ -75,470 +143,1021 @@ background-position:center;
 }
 
 .hero small{
+
     text-transform:uppercase;
+
     letter-spacing:5px;
+
     color:#fff;
 }
 
 .hero h1{
+
     font-size:42px;
+
     line-height:1.08;
+
     margin:18px 0;
 }
 
 .hero p{
+
     max-width:760px;
+
     margin:0 auto 30px;
+
     font-size:17px;
+
     color:#ccc;
 }
 
+
+/* =========================
+   BOTÕES
+========================= */
+
 .btn{
+
     display:inline-block;
-   background:#25D366;
+
+    background:#25D366;
+
     color:#fff;
+
     padding:13px 22px;
+
     border-radius:7px;
+
     text-decoration:none;
+
     font-weight:bold;
-    margin:0px;
 }
 
 .btn-dark{
+
     background:transparent;
+
     color:#fff;
+
     border:1px solid #777;
 }
+
+
+/* =========================
+   SEÇÕES
+========================= */
 
 section{
     padding:80px 8%;
 }
 
-.section-title{
-    text-align:center;
-    max-width:750px;
-    margin:0 auto 45px;
-}
 
-.section-title h2{
-    font-size:38px;
-    margin-bottom:12px;
-}
+/* soluções */
 
-.section-title p{
-    color:#aaa;
-}
+.solucoes{
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
-}
+    padding:35px 8% 45px;
 
-.card{
-    background:#151515;
-    border:1px solid #292929;
-    border-radius:14px;
-    padding:35px 28px;
-}
-
-.card h3{
-    font-size:22px;
-    margin-bottom:12px;
-}
-
-.card p{
-    color:#aaa;
-}
-
-.destaque{
-    background:#101010;
-}
-
-.numeros{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    text-align:center;
-    gap:20px;
-}
-
-.numero{
-    padding:25px;
-}
-
-.numero strong{
-    display:block;
-    font-size:35px;
-    margin-bottom:5px;
-}
-
-.numero span{
-    color:#999;
-}
-
-.projeto{
-    text-align:center;
-    background:linear-gradient(135deg,#181818,#080808);
-    padding:25px 8% 15px;
-}
-
-.projeto h2{
-    font-size:36px;
-    margin-bottom:10px;
-}
-
-.projeto p{
-    max-width:720px;
-    margin:0 auto 10px;
-    color:#bbb;
-    font-size:18px;
-}
-
-.contato{
-    text-align:center;
-}
-
-.contato h2{
-    font-size:28px;
-    margin-bottom:4px;
-}
-
-.contato p{
-    color:#aaa;
-    margin-bottom:25px;
-}
-
-footer{
-    text-align:center;
-    padding:20px 20px 80px;
-    border-top:1px solid #292929;
-    color:#777;
-    font-size:14px;
-}
-
-@media(max-width:800px){
-
-    header{
-        justify-content:center;
-    }
-
-    nav{
-        display:none;
-    }
-
-    .hero h1{
-        font-size:40px;
-    }
-
-    .hero p{
-        font-size:17px;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .numeros{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .section-title h2,
-    .projeto h2,
-    .contato h2{
-        font-size:31px;
-    }
-}
-   .solucoes{
-    padding:20px 8% 35px;
     background:#111;
+
     text-align:center;
 }
 
 .solucoes h2{
+
     font-size:32px;
+
     margin-bottom:10px;
 }
 
 .solucoes > p{
+
     color:#aaa;
+
     margin-bottom:25px;
 }
 
 .solucoes-grid{
+
     display:grid;
-   grid-template-columns:1fr;
+
+    grid-template-columns:1fr;
+
     gap:10px;
 }
 
 .solucao-card{
+
     background:#1b1b1b;
-    padding:15px 20px;
+
+    padding:20px;
+
     border-radius:12px;
+
     border:1px solid #333;
 }
 
 .solucao-card h3{
+
     margin-bottom:12px;
+
     font-size:22px;
 }
 
 .solucao-card p{
     color:#bbb;
-} 
-    .empresa{
-   padding:20px 8% 0px;
+}
+
+
+/* empresa */
+
+.empresa{
+
+    padding:35px 8% 25px;
+
     background:#181818;
+
     text-align:center;
 }
 
 .empresa h2{
+
     font-size:36px;
+
     margin-bottom:12px;
 }
 
 .empresa p{
+
     max-width:800px;
+
     margin:0 auto 18px;
+
     color:#bbb;
+
     font-size:18px;
+
     line-height:1.7;
 }
-    .contato{
-    padding:0px 8% 70px;
+
+
+/* projeto */
+
+.projeto{
+
+    text-align:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #181818,
+        #080808
+    );
+
+    padding:35px 8%;
+}
+
+.projeto h2{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+}
+
+.projeto p{
+
+    max-width:720px;
+
+    margin:0 auto 15px;
+
+    color:#bbb;
+
+    font-size:18px;
+}
+
+
+/* contato */
+
+.contato{
+
+    padding:35px 8% 70px;
+
     background:#0d0d0d;
+
     text-align:center;
 }
 
 .contato h2{
+
     font-size:36px;
+
     margin-bottom:15px;
 }
 
 .contato p{
+
     color:#bbb;
+
     font-size:18px;
+
     margin-bottom:25px;
 }
 
 .contato .btn{
-    display:inline-block;
+
     margin:10px 0 25px;
-background:#25D366;
-color:#fff;
-font-weight:bold;
-border:none;
-    
-}
-@media (max-width: 768px){
-    header{
-        padding:15px 20px;
-    }
 
-    .logo{
-        font-size:20px;
-    }
+    background:#25D366;
 
-    nav{
-        gap:12px;
-    }
+    color:#fff;
 
-    nav a{
-        font-size:12px;
-    }
-}
-    html, body{
-    max-width:100%;
-    overflow-x:hidden;
+    font-weight:bold;
+
+    border:none;
 }
 
-@media (max-width:768px){
-    header{
-        flex-direction:column;
-        width:100%;
-        box-sizing:border-box;
-    }
 
-    nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        width:100%;
-        margin-top:12px;
-    }
+/* =========================
+   RODAPÉ
+========================= */
 
-    .hero{
-    min-height:350px;
-    height:auto;
-}
+footer{
 
-    .hero-content{
-  transform:none;
-    max-width:100%;
-}
+    text-align:center;
 
-.hero small{
-    display:block;
-    font-size:11px;
-    letter-spacing:3px;
-    line-height:1.4;
-    margin-bottom:18px;
-    transform:translateY(45px);
-}
-    .hero h1{
-    font-size:28px;
-    line-height:1.08;
-    margin:12px 0;
-    transform:translateY(45px);    
-}
+    padding:20px 20px 80px;
 
-.hero p{
+    border-top:1px solid #292929;
+
+    color:#777;
+
     font-size:14px;
-    line-height:1.4;
-    max-width:82%;
-    margin:0 auto 22px;
-    transform:translateY(51px);
-}
-.hero .btn{
-    transform:translateY(48px);
-padding:12px 22px;
-font-size:14px;
-}
-   .whatsapp-float{
-    right:8px !important;
-    bottom:8px !important;
-    padding:8px !important;
-    font-size:0px !important;
 }
 
-.whatsapp-float svg{
-    width:18px;
-    height:18px;
-} 
-}
+
+/* =========================
+   WHATSAPP FLUTUANTE
+========================= */
 
 .whatsapp-float{
+
     position:fixed;
+
     right:20px;
+
     bottom:20px;
+
     z-index:9999;
+
     background:#25D366;
+
     color:#fff;
+
     padding:14px 20px;
+
     border-radius:50px;
+
     text-decoration:none;
+
     font-weight:bold;
+
     font-size:16px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.35);
+
+    box-shadow:
+    0 4px 15px
+    rgba(0,0,0,.35);
 }
 
 .whatsapp-float:hover{
     transform:translateY(-2px);
 }
+
+
+/* ======================================================
+   AJUSTE PARA CELULAR
+====================================================== */
+
+@media (max-width:768px){
+
+
+    /* CABEÇALHO */
+
+    header{
+
+        position:sticky;
+
+        top:0;
+
+        z-index:1000;
+
+        width:100%;
+
+        min-height:64px;
+
+        padding:11px 16px;
+
+        display:flex;
+
+        flex-direction:row;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+        background:rgba(5,5,5,.98);
+    }
+
+
+    .logo{
+
+        font-size:18px;
+
+        letter-spacing:3px;
+
+        white-space:nowrap;
+    }
+
+
+    .menu-toggle{
+
+        display:block;
+
+        flex:0 0 auto;
+    }
+
+
+    /* MENU FECHADO */
+
+    header nav{
+
+        display:none;
+
+        position:absolute;
+
+        top:64px;
+
+        left:0;
+
+        right:0;
+
+        width:100%;
+
+        margin:0;
+
+        padding:
+        8px 16px 16px;
+
+        background:
+        rgba(5,5,5,.99);
+
+        border-bottom:
+        1px solid #292929;
+
+        flex-direction:column;
+
+        gap:0;
+    }
+
+
+    /* MENU ABERTO */
+
+    header nav.open{
+        display:flex;
+    }
+
+
+    header nav a{
+
+        display:block;
+
+        width:100%;
+
+        margin:0;
+
+        padding:12px 4px;
+
+        border-bottom:
+        1px solid #1d1d1d;
+
+        font-size:14px;
+
+        text-align:center;
+    }
+
+    header nav a:last-child{
+        border-bottom:0;
+    }
+
+
+
+    /* ==================================
+       IMAGEM PRINCIPAL NO CELULAR
+    ================================== */
+
+    .hero{
+
+        min-height:410px;
+
+        height:auto;
+
+        padding:
+        155px 18px 34px;
+
+        align-items:flex-start;
+
+        background-color:#090909;
+
+        background-image:
+
+        linear-gradient(
+            to bottom,
+
+            rgba(0,0,0,.12) 0%,
+
+            rgba(0,0,0,.25) 40%,
+
+            rgba(0,0,0,.78) 72%,
+
+            #090909 100%
+        ),
+
+        url('11.jpeg');
+
+
+        background-size:
+        100% 100%,
+        100% auto;
+
+
+        background-position:
+        center,
+        top center;
+
+
+        background-repeat:
+        no-repeat,
+        no-repeat;
+    }
+
+
+    .hero-content{
+
+        width:100%;
+
+        max-width:100%;
+
+        transform:none;
+    }
+
+
+    .hero small{
+
+        display:block;
+
+        transform:none;
+
+        margin:
+        0 0 8px;
+
+        font-size:10px;
+
+        line-height:1.3;
+
+        letter-spacing:2px;
+    }
+
+
+    .hero h1{
+
+        transform:none;
+
+        font-size:30px;
+
+        line-height:1.08;
+
+        margin:
+        8px 0 12px;
+    }
+
+
+    .hero p{
+
+        transform:none;
+
+        width:100%;
+
+        max-width:330px;
+
+        margin:
+        0 auto 18px;
+
+        font-size:15px;
+
+        line-height:1.45;
+
+        color:#e2e2e2;
+    }
+
+
+    .hero .btn{
+
+        transform:none;
+
+        padding:
+        12px 18px;
+
+        font-size:13px;
+    }
+
+
+
+    /* SOLUÇÕES */
+
+    .solucoes{
+        padding-top:34px;
+    }
+
+    .solucoes h2{
+
+        font-size:29px;
+
+        line-height:1.15;
+    }
+
+
+
+    .empresa h2,
+    .projeto h2,
+    .contato h2{
+
+        font-size:29px;
+    }
+
+
+
+    .empresa p,
+    .projeto p,
+    .contato p{
+
+        font-size:16px;
+    }
+
+
+
+    /* WHATSAPP MOBILE */
+
+    .whatsapp-float{
+
+        right:10px;
+
+        bottom:10px;
+
+        padding:10px;
+
+        width:46px;
+
+        height:46px;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        font-size:0;
+    }
+
+
+    .whatsapp-float svg{
+
+        width:24px;
+
+        height:24px;
+
+        margin-right:0 !important;
+    }
+
+}
+
 </style>
+
 </head>
+
 
 <body>
 
+
+<!-- =========================
+     CABEÇALHO
+========================= -->
+
 <header>
-    <div class="logo">NOMAD HORSE</div>
+
+    <div class="logo">
+        NOMAD HORSE
+    </div>
+
+
+    <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false">
+        ☰
+    </button>
+
 
     <nav>
-        <a href="#empresa">A Nomad Horse</a>
-        <a href="#solucoes">Soluções</a>
-        <a href="#projeto">Seu Projeto</a>
-        <a href="#contato">Contato</a>
+
+        <a href="#empresa">
+            A Nomad Horse
+        </a>
+
+        <a href="#solucoes">
+            Soluções
+        </a>
+
+        <a href="#projeto">
+            Seu Projeto
+        </a>
+
+        <a href="#contato">
+            Contato
+        </a>
+
     </nav>
+
 </header>
 
-<section class="hero">
-    <div class="hero-content">
-        <small>Trailers • Motorhomes • Projetos Especiais</small>
 
-        <h1>Liberdade para ir mais longe.</h1>
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <small>
+            Trailers • Motorhomes • Projetos Especiais
+        </small>
+
+
+        <h1>
+            Liberdade para ir mais longe.
+        </h1>
+
 
         <p>
-            Trailers e motorhomes personalizados, desenvolvidos para
-            transformar viagens, trabalho e aventura em experiências
+
+            Trailers e motorhomes personalizados,
+            desenvolvidos para transformar viagens,
+            trabalho e aventura em experiências
             únicas sobre rodas.
+
         </p>
 
-        <a class="btn" href="#solucoes">CONHEÇA NOSSOS PROJETOS</a>
-</div>
+
+        <a
+            class="btn"
+            href="#solucoes">
+
+            CONHEÇA NOSSOS PROJETOS
+
+        </a>
+
+    </div>
+
 </section>
 
-    <section id="solucoes" class="solucoes">
-    <h2>Soluções Nomad Horse</h2>
-    <p>Projetos desenvolvidos para transformar liberdade, conforto e aventura em experiências únicas.</p>
+
+
+<!-- =========================
+     SOLUÇÕES
+========================= -->
+
+<section
+    id="solucoes"
+    class="solucoes">
+
+
+    <h2>
+        Soluções Nomad Horse
+    </h2>
+
+
+    <p>
+
+        Projetos desenvolvidos para transformar
+        liberdade, conforto e aventura
+        em experiências únicas.
+
+    </p>
+
 
     <div class="solucoes-grid">
 
-        <div class="solucao-card">
-            <h3>Trailers para Cavalos</h3>
-            <p>Segurança, conforto e praticidade para transportar seus cavalos com tranquilidade.</p>
-        </div>
 
         <div class="solucao-card">
-            <h3>Motorhomes Personalizados</h3>
-            <p>Projetos exclusivos desenvolvidos de acordo com seu estilo de viagem e suas necessidades.</p>
+
+            <h3>
+                Trailers para Cavalos
+            </h3>
+
+            <p>
+
+                Segurança, conforto e praticidade
+                para transportar seus cavalos
+                com tranquilidade.
+
+            </p>
+
         </div>
 
+
+
         <div class="solucao-card">
-            <h3>Projetos Especiais</h3>
-            <p>Soluções sob medida para transformar sua ideia em um projeto único sobre rodas.</p>
+
+            <h3>
+                Motorhomes Personalizados
+            </h3>
+
+            <p>
+
+                Projetos exclusivos desenvolvidos
+                de acordo com seu estilo de viagem
+                e suas necessidades.
+
+            </p>
+
         </div>
+
+
+
+        <div class="solucao-card">
+
+            <h3>
+                Projetos Especiais
+            </h3>
+
+            <p>
+
+                Soluções sob medida para transformar
+                sua ideia em um projeto único
+                sobre rodas.
+
+            </p>
+
+        </div>
+
 
     </div>
+
 </section>
-<section id="empresa" class="empresa">
-    <h2>A Nomad Horse</h2>
+
+
+
+<!-- =========================
+     EMPRESA
+========================= -->
+
+<section
+    id="empresa"
+    class="empresa">
+
+
+    <h2>
+        A Nomad Horse
+    </h2>
+
 
     <p>
-        Transformamos ideias em projetos únicos sobre rodas.
-        Desenvolvemos trailers, motorhomes e projetos especiais
-        personalizados para cada cliente.
+
+        Transformamos ideias em projetos únicos
+        sobre rodas.
+
+        Desenvolvemos trailers, motorhomes
+        e projetos especiais personalizados
+        para cada cliente.
+
     </p>
 
-    <p>
-        Cada projeto é pensado para unir qualidade, segurança,
-        conforto e liberdade, desde o planejamento até a execução.
-    </p>
-</section>
-<section id="projeto" class="projeto">
-    <h2>Seu Projeto</h2>
 
     <p>
+
+        Cada projeto é pensado para unir
+        qualidade, segurança, conforto e liberdade,
+        desde o planejamento até a execução.
+
+    </p>
+
+</section>
+
+
+
+<!-- =========================
+     PROJETO
+========================= -->
+
+<section
+    id="projeto"
+    class="projeto">
+
+
+    <h2>
+        Seu Projeto
+    </h2>
+
+
+    <p>
+
         Cada cliente tem uma necessidade diferente.
+
         Por isso, desenvolvemos projetos personalizados
-        de acordo com o seu objetivo, espaço e estilo de uso.
+        de acordo com o seu objetivo,
+        espaço e estilo de uso.
+
     </p>
+
 
     <p>
-        Do primeiro desenho à execução, trabalhamos para transformar
-        sua ideia em um trailer ou motorhome exclusivo.
+
+        Do primeiro desenho à execução,
+        trabalhamos para transformar sua ideia
+        em um trailer ou motorhome exclusivo.
+
     </p>
 
-<a class="btn" href="https://wa.me/5548992011168?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Nomad%20Horse%20e%20quero%20criar%20meu%20projeto%20personalizado." target="_blank">QUERO CRIAR MEU PROJETO</a></section>
-<section id="contato" class="contato">
-   <h2>Fale com a<br>Nomad Horse</h2>
 
-    <p>
-        Conte sua ideia e vamos conversar sobre o seu próximo projeto.
-    </p>
+    <a
+        class="btn"
 
-    <a class="btn" href="https://wa.me/5548992011168?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Nomad%20Horse%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20trailer%20ou%20motorhome%20personalizado." target="_blank">
-        FALAR PELO WHATSAPP
+        href="https://wa.me/5548992011168?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Nomad%20Horse%20e%20quero%20criar%20meu%20projeto%20personalizado."
+
+        target="_blank">
+
+        QUERO CRIAR MEU PROJETO
+
     </a>
+
+</section>
+
+
+
+<!-- =========================
+     CONTATO
+========================= -->
+
+<section
+    id="contato"
+    class="contato">
+
+
+    <h2>
+        Fale com a<br>
+        Nomad Horse
+    </h2>
+
+
+    <p>
+
+        Conte sua ideia e vamos conversar
+        sobre o seu próximo projeto.
+
+    </p>
+
+
+    <a
+        class="btn"
+
+        href="https://wa.me/5548992011168?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Nomad%20Horse%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20de%20trailer%20ou%20motorhome%20personalizado."
+
+        target="_blank">
+
+        FALAR PELO WHATSAPP
+
+    </a>
+
 
     <p>
         Palhoça - SC
     </p>
+
 </section>
-    <footer>
-    © 2026 Nomad Horse. Todos os direitos reservados.
+
+
+
+<!-- =========================
+     RODAPÉ
+========================= -->
+
+<footer>
+
+    © 2026 Nomad Horse.
+    Todos os direitos reservados.
+
 </footer>
 
-    <a href="https://wa.me/5548992011168?text=Olá%21%20Vim%20pelo%20site%20da%20Nomad%20Horse%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
-   class="whatsapp-float"
-   target="_blank">
-     <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:7px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.009-.371-.011-.57-.011-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.004 2a9.84 9.84 0 0 0-8.405 14.95L2 22l5.185-1.574A9.94 9.94 0 1 0 12.004 2zm0 17.9a8.03 8.03 0 0 1-4.095-1.12l-.294-.175-3.076.933.92-2.998-.192-.307A8.04 8.04 0 1 1 12.004 19.9z"/></svg>WhatsApp
+
+
+<!-- =========================
+     WHATSAPP FLUTUANTE
+========================= -->
+
+<a
+
+href="https://wa.me/5548992011168?text=Olá%21%20Vim%20pelo%20site%20da%20Nomad%20Horse%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+
+class="whatsapp-float"
+
+target="_blank">
+
+
+<svg
+width="22"
+height="22"
+viewBox="0 0 24 24"
+fill="currentColor"
+style="vertical-align:middle;margin-right:7px;">
+
+<path
+d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.009-.371-.011-.57-.011-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479s1.065 2.875 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.625.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+
+<path
+d="M12.004 2a9.84 9.84 0 0 0-8.405 14.95L2 22l5.185-1.574A9.94 9.94 0 1 0 12.004 2zm0 17.9a8.03 8.03 0 0 1-4.095-1.12l-.294-.175-3.076.933.92-2.998-.192-.307A8.04 8.04 0 1 1 12.004 19.9z"/>
+
+</svg>
+
+WhatsApp
+
 </a>
+
+
+
+<!-- =========================
+     MENU DO CELULAR
+========================= -->
+
+<script>
+
+const menuToggle =
+document.querySelector('.menu-toggle');
+
+const navMenu =
+document.querySelector('header nav');
+
+
+if(menuToggle && navMenu){
+
+    menuToggle.addEventListener(
+        'click',
+        () => {
+
+            const aberto =
+            navMenu.classList.toggle('open');
+
+
+            menuToggle.setAttribute(
+                'aria-expanded',
+                aberto ? 'true' : 'false'
+            );
+
+
+            menuToggle.textContent =
+            aberto ? '✕' : '☰';
+
+        }
+    );
+
+
+    navMenu
+    .querySelectorAll('a')
+    .forEach(link => {
+
+        link.addEventListener(
+            'click',
+            () => {
+
+                navMenu.classList.remove('open');
+
+                menuToggle.setAttribute(
+                    'aria-expanded',
+                    'false'
+                );
+
+                menuToggle.textContent = '☰';
+
+            }
+        );
+
+    });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
