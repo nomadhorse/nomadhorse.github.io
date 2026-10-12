@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://nomadhorse.com.br/</loc></url>
-  <url><loc>https://nomadhorse.com.br/trailers-comerciais.html</loc></url>
-  <url><loc>https://nomadhorse.com.br/trailers-para-cavalos.html</loc></url>
-  <url><loc>https://nomadhorse.com.br/motorhomes-personalizados.html</loc></url>
+  <url><loc>https://nomadhorse.com.br/</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://nomadhorse.com.br/trailers-comerciais.html</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://nomadhorse.com.br/trailer-wine-bar.html</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://nomadhorse.com.br/trailer-food-truck.html</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://nomadhorse.com.br/trailers-para-cavalos.html</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://nomadhorse.com.br/motorhomes-personalizados.html</loc><lastmod>2026-10-12</lastmod></url>
 </urlset>
