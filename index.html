@@ -753,6 +753,26 @@ footer{
 
 }
 
+
+/* COMO FUNCIONA E PERGUNTAS */
+.como-funciona,.perguntas{background:#101010;text-align:center;padding:52px 8%}
+.como-funciona h2,.perguntas h2{font-size:32px;margin-bottom:12px}
+.como-funciona .intro,.perguntas .intro{color:#bbb;max-width:780px;margin:0 auto 26px}
+.etapas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:1100px;margin:24px auto}
+.etapa{background:#1c1c1c;text-align:left;border:1px solid #333;border-radius:12px;padding:23px}
+.etapa .numero{font-size:15px;font-weight:700;color:#96deb4;letter-spacing:2px}
+.etapa h3{font-size:22px;line-height:1.25;margin:10px 0}
+.etapa p{font-size:16px;color:#ccc}
+.perguntas{background:#181818}
+.perguntas-lista{max-width:850px;margin:20px auto;text-align:left}
+.perguntas details{border-bottom:1px solid #333;padding:16px 0}
+.perguntas summary{cursor:pointer;font-weight:700;font-size:18px}
+.perguntas details p{color:#bbb;margin-top:12px;font-size:16px}
+@media(max-width:768px){
+  .etapas-grid{grid-template-columns:1fr}
+  .como-funciona,.perguntas{padding:38px 7%}
+  .como-funciona h2,.perguntas h2{font-size:29px}
+}
 </style>
 
 </head>
@@ -796,7 +816,7 @@ footer{
         </a>
 
         <a href="#contato">
-            Contato
+            Solicitar orçamento
         </a>
 
     </nav>
@@ -1021,6 +1041,43 @@ footer{
 </section>
 
 
+
+
+<!-- PROCESSO DE ORÇAMENTO -->
+<section class="como-funciona" id="como-funciona">
+  <h2>Como encomendar um trailer personalizado?</h2>
+  <p class="intro">Da ideia inicial à proposta, a Nomad Horse desenvolve projetos sob medida para negócios, eventos, transporte e viagens.</p>
+  <div class="etapas-grid">
+    <div class="etapa"><span class="numero">ETAPA 01</span><h3>Conte o que você precisa</h3><p>Envie o tipo de trailer, medidas desejadas, finalidade de uso e referências pelo WhatsApp.</p></div>
+    <div class="etapa"><span class="numero">ETAPA 02</span><h3>Planejamento e proposta</h3><p>Conversamos sobre layout, equipamentos, acabamentos, necessidades técnicas e condições do projeto.</p></div>
+    <div class="etapa"><span class="numero">ETAPA 03</span><h3>Fabricação e entrega</h3><p>Após a aprovação da proposta e do contrato, definimos as etapas de fabricação e as condições de entrega combinadas.</p></div>
+  </div>
+  <a class="btn" href="https://wa.me/5548992011168?text=Ol%C3%A1%21%20Conheci%20a%20Nomad%20Horse%20pelo%20Google%20e%20quero%20solicitar%20um%20or%C3%A7amento%20de%20trailer%20personalizado." target="_blank" rel="noopener noreferrer">PEDIR MEU ORÇAMENTO</a>
+</section>
+
+<!-- PERGUNTAS FREQUENTES -->
+<section class="perguntas" id="duvidas">
+  <h2>Dúvidas sobre trailers personalizados</h2>
+  <p class="intro">Entenda os primeiros passos para desenvolver seu trailer com a Nomad Horse.</p>
+  <div class="perguntas-lista">
+    <details>
+      <summary>A Nomad Horse fabrica trailers comerciais sob medida?</summary>
+      <p>Sim. O projeto pode ser pensado para Wine Bar, Food Truck, atendimento em eventos e outras atividades, de acordo com a finalidade e a viabilidade técnica. <a href="/trailers-comerciais.html">Conheça os trailers comerciais.</a></p>
+    </details>
+    <details>
+      <summary>Como solicitar orçamento de um trailer?</summary>
+      <p>Entre em contato pelo WhatsApp e informe o tipo de trailer, tamanho aproximado, equipamentos necessários e referências. Esses detalhes ajudam a desenvolver uma proposta adequada ao seu objetivo.</p>
+    </details>
+    <details>
+      <summary>Vocês realizam entregas fora de Santa Catarina?</summary>
+      <p>A Nomad Horse pode combinar entregas presenciais em outros estados conforme o projeto, o destino e as condições acordadas. Consulte a disponibilidade para sua região.</p>
+    </details>
+    <details>
+      <summary>Os móveis e acabamentos podem ser personalizados?</summary>
+      <p>Sim. O projeto pode considerar distribuição interna, cores, móveis e acabamentos personalizados. Os materiais e os itens incluídos são definidos na proposta e no contrato.</p>
+    </details>
+  </div>
+</section>
 
 <!-- =========================
      CONTATO
