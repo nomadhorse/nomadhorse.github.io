@@ -773,6 +773,25 @@ footer{
   .como-funciona,.perguntas{padding:38px 7%}
   .como-funciona h2,.perguntas h2{font-size:29px}
 }
+
+/* Prévia de fotos dos projetos Nomad Horse */
+.vitrine-projetos{padding:56px 8%;background:#151515;text-align:center}
+.vitrine-projetos h2{font-size:34px;line-height:1.2;margin-bottom:10px}
+.vitrine-projetos > p{color:#bdbdbd;max-width:720px;margin:0 auto 24px}
+.vitrine-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:1200px;margin:0 auto 22px}
+.vitrine-foto{background:#1e1e1e;border:1px solid #333;border-radius:12px;overflow:hidden;text-align:left}
+.vitrine-foto a{display:block;text-decoration:none;color:inherit}
+.vitrine-foto img{width:100%;height:240px;display:block;object-fit:cover}
+.vitrine-foto:first-child img{object-position:center center}
+.vitrine-foto:nth-child(3) img{object-position:center 42%}
+.vitrine-foto figcaption{padding:15px 16px;color:#eee;font-weight:bold}
+.vitrine-projetos .btn{margin-top:6px}
+@media(max-width:768px){
+ .vitrine-projetos{padding:38px 7%}
+ .vitrine-projetos h2{font-size:29px}
+ .vitrine-grid{grid-template-columns:1fr}
+ .vitrine-foto img{height:auto;aspect-ratio:16/10;object-fit:cover}
+}
 </style>
 
 </head>
@@ -809,6 +828,10 @@ footer{
 
         <a href="#solucoes">
             Soluções
+        </a>
+
+        <a href="#galeria">
+            Galeria
         </a>
 
         <a href="#projeto">
@@ -954,6 +977,19 @@ footer{
 </section>
 
 
+
+
+<!-- GALERIA DE PROJETOS -->
+<section id="galeria" class="vitrine-projetos">
+  <h2>Projetos Nomad Horse</h2>
+  <p>Fotos de trailers, detalhes dos acabamentos e soluções sob medida. Conheça nossa galeria e inspire seu próximo projeto.</p>
+  <div class="vitrine-grid">
+    <figure class="vitrine-foto"><a href="/galeria.html" aria-label="Ver a galeria de projetos Nomad Horse"><img src="/galeria/trailer-nomad-horse-externo.jpg" alt="Trailer branco Nomad Horse acoplado a veículo SUV preto em paisagem ao ar livre" width="900" height="506" loading="lazy" decoding="async"><figcaption>Trailer Nomad Horse em cenário externo</figcaption></a></figure>
+    <figure class="vitrine-foto"><a href="/galeria.html" aria-label="Ver a galeria de projetos Nomad Horse"><img src="/galeria/trailer-nomad-horse-identidade.jpg" alt="Trailer Nomad Horse branco com logotipo dourado, duas rodas por lado e detalhe inferior em alumínio" width="900" height="572" loading="lazy" decoding="async"><figcaption>Identidade Nomad Horse</figcaption></a></figure>
+    <figure class="vitrine-foto"><a href="/galeria.html" aria-label="Ver a galeria de projetos Nomad Horse"><img src="/galeria/interior-acabamento-premium.jpg" alt="Interior de trailer com iluminação em LED, móveis de madeira, micro-ondas e equipamentos de refrigeração" width="825" height="1100" loading="lazy" decoding="async"><figcaption>Interior e acabamentos</figcaption></a></figure>
+  </div>
+  <a class="btn btn-dark" href="/galeria.html">VER TODAS AS FOTOS DOS PROJETOS</a>
+</section>
 
 <!-- =========================
      EMPRESA
