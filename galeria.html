@@ -25,10 +25,10 @@ header{background:#070707;border-bottom:1px solid #292929;padding:20px 7%;displa
 nav{display:flex;gap:21px;flex-wrap:wrap}
 nav a{text-decoration:none;color:#ddd;font-size:14px}
 nav a:hover{color:#e4c37a}
-.hero{background:radial-gradient(ellipse at 50% 0%,#38301c 0%,#14120d 40%,#090909 90%);text-align:center;padding:76px 7% 60px;border-bottom:1px solid #4c3c20}
+.hero{position:relative;isolation:isolate;background:linear-gradient(90deg,rgba(5,5,5,.91),rgba(7,7,7,.68) 55%,rgba(7,7,7,.80)),url('/galeria/trailer-nomad-horse-identidade.jpg') center 48%/cover no-repeat;text-align:center;padding:100px 7% 92px;border-bottom:1px solid #846635;box-shadow:inset 0 -65px 90px rgba(0,0,0,.45)}
 .eyebrow{text-transform:uppercase;color:#d9b56a;letter-spacing:3px;font-size:13px;font-weight:bold}
 h1{font-size:clamp(32px,5vw,48px);line-height:1.14;margin:12px auto 18px;max-width:850px}
-.intro{font-size:18px;max-width:760px;margin:auto;color:#c7c7c7}
+.intro{font-size:18px;max-width:760px;margin:auto;color:#f0e9de;text-shadow:0 2px 8px rgba(0,0,0,.9)}.hero h1{text-shadow:0 3px 20px rgba(0,0,0,.85)}
 .gallery{max-width:1200px;margin:0 auto;padding:48px 5% 60px}
 .gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
 .photo{margin:0;background:#1b1b1b;border:1px solid #4c3c20;border-radius:14px;overflow:hidden;box-shadow:0 12px 32px rgba(0,0,0,.22)}
@@ -51,7 +51,7 @@ figcaption p{margin:0;color:#bfbfbf;font-size:15px}
 footer{text-align:center;border-top:1px solid #2a2a2a;padding:26px;color:#929292;font-size:14px}
 @media(max-width:700px){
 header{padding:16px 6%}.brand{font-size:18px}
-nav{gap:13px}.hero{padding:47px 7%}
+nav{gap:13px}.hero{padding:70px 7% 64px;background-position:center center}
 .intro{font-size:16px}.gallery{padding:30px 6%}
 .gallery-grid{grid-template-columns:1fr;gap:15px}
 .photo:first-child{grid-column:auto}
